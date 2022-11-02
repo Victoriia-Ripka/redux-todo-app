@@ -1,9 +1,11 @@
-const toggleCompleted = {
-  type: 'tasks/toggleCompleted',
-  payload: 'Task id',
+export const setStatusFilter = value => {
+  return {
+    type: 'filters/setStatusFilter',
+    payload: value,
+  };
 };
 
-const setStatusFilter = {
-  type: 'filters/setStatusFilter',
-  payload: 'Filter value',
-};
+// const setStatusFilter = {
+//   type: 'filters/setStatusFilter',
+//   payload: 'Filter value',
+// };
